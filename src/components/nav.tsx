@@ -33,7 +33,7 @@ const NavLink: React.FC<NavLinkProps> = ({
 const navItems = [
   { href: "/ESP/", label: "Accueil" },
   { href: "/ESP/#solutions", label: "Services" },
-  { href: "/ESP/#team", label: "Équipe" },
+  { href: "/ESP/#team", label: "Equipe" },
   { href: "/ESP/Contact", label: "Contact" },
   { href: "/ESP/#FAQ", label: "FAQ" },
 ];
