@@ -2,7 +2,6 @@
 const link = "/Contact";
 import Image from "astro/components/Image.astro";
 
-// adjust these variable to change your content
 const mainText = "Security Information and Event Management";
 const secondaryText = "Surveillez, détectez, réagissez, protégez !";
 ---
@@ -11,7 +10,7 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
   <link rel="preload" href="/ESP/heroimg.webp" as="image" />
 </head>
 
-<section class="relative z-[-10] h-[70vh] w-full">
+<section class="relative h-[70vh] w-full" style="z-index: 1;">
   <Image
     data-testid="hero-img"
     src="/ESP/heroimg.webp"
@@ -22,7 +21,7 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
     height={1080}
   />
   <div
-    class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100"
+    class="relative z-[60] flex h-full flex-col items-center justify-center text-gray-100"
   >
     <h1
       data-testid="hero-text"
@@ -39,13 +38,27 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
       {secondaryText}
     </h2>
     
-    <a 
-      href="https://www.youtube.com/watch?v=zOeSSP9GJcs" 
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-block bg-red-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-red-700 no-underline"
-    >
-      Regarder la vidéo
-    </a>
+    <div class="relative" style="z-index: 100;">
+      <a 
+        href="https://www.youtube.com/watch?v=zOeSSP9GJcs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-red-600 px-6 py-3 font-bold text-white shadow-2xl transition-all hover:bg-red-700"
+        style="z-index: 100; position: relative;"
+      >
+        <span class="relative">Regarder la vidéo</span>
+      </a>
+    </div>
   </div>
 </section>
+
+<style>
+  section {
+    position: relative;
+    isolation: isolate;
+  }
+  
+  .relative {
+    position: relative;
+  }
+</style>
