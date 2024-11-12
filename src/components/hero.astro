@@ -39,21 +39,13 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
       {secondaryText}
     </h2>
     
-    <button 
-      onclick="window.open('https://www.youtube.com/watch?v=zOeSSP9GJcs', '_blank')"
-      type="button"
-      class="bg-red-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-red-700"
+    <a 
+      href="https://www.youtube.com/watch?v=zOeSSP9GJcs"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block bg-red-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-red-700 no-underline"
     >
       Regarder la vidéo
-    </button>
+    </a>
   </div>
 </section>
-
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', function() {
-    const videoButton = document.querySelector('button');
-    videoButton.addEventListener('click', function() {
-      window.open('https://www.youtube.com/watch?v=zOeSSP9GJcs', '_blank');
-    });
-  });
-</script>
