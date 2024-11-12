@@ -12,12 +12,11 @@ import {
 import { ThemeToggle } from "@/components/theme";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/About", label: "About" },
-  { href: "/Services", label: "Services" },
-  { href: "/Reviews", label: "Reviews" },
-  { href: "/Contact", label: "Contact" },
-  { href: "/#FAQ", label: "FAQ" },
+  { href: "/ESP/", label: "Accueil" },
+  { href: "/ESP/#team", label: "Equipe" },
+  { href: "/ESP/#solutions", label: "Services" },
+  { href: "/ESP/Contact", label: "Contact" },
+  { href: "/ESP/#FAQ", label: "FAQ" },
 ];
 
 export function MobileNav() {
