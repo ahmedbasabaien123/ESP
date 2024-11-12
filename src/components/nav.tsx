@@ -31,11 +31,11 @@ const NavLink: React.FC<NavLinkProps> = ({
 );
 
 const navItems = [
-  { href: "/", label: "Accueil" },
-  { href: "/#solutions", label: "Services" },
-  { href: "/#team", label: "Equipe" },
-  { href: "/Contact", label: "Contact" },
-  { href: "/#FAQ", label: "FAQ" },
+  { href: "/ESP/", label: "Accueil" },
+  { href: "/ESP/#solutions", label: "Services" },
+  { href: "/ESP/#team", label: "Equipe" },
+  { href: "/ESP/Contact", label: "Contact" },
+  { href: "/ESP/#FAQ", label: "FAQ" },
 ];
 
 export default function Nav() {
@@ -50,7 +50,7 @@ export default function Nav() {
       {/* Desktop Navigation */}
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
-          <a href="/">
+          <a href="/ESP/">
           </a>
           <ul className="flex items-center gap-8">
             {navItems.map((item) => (
