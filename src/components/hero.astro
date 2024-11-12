@@ -5,6 +5,7 @@ import Image from "astro/components/Image.astro";
 // adjust these variable to change your content
 const mainText = "Security Information and Event Management";
 const secondaryText = "Surveillez, détectez, réagissez, protégez !";
+const videoUrl = "https://www.youtube.com/watch?v=zOeSSP9GJcs";
 ---
 
 <head>
@@ -14,7 +15,7 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
 <section class="relative z-[-10] h-[70vh] w-full">
   <Image
     data-testid="hero-img"
-    src="/ESP/heroimg.webp"
+    src="/heroimg.webp"
     alt="hero"
     loading="eager"
     class="absolute inset-0 h-full w-full object-cover"
@@ -39,8 +40,18 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
       {secondaryText}
     </h2>
     
-    <a href="https://www.youtube.com/watch?v=zOeSSP9GJcs" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded">
+    <button 
+      onclick={`window.location.href='${videoUrl}'`}
+      class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+    >
       Regarder la vidéo
-    </a>
+    </button>
   </div>
 </section>
+
+<script>
+  // Ajout d'un gestionnaire d'événements côté client
+  document.querySelector('button').addEventListener('click', function() {
+    window.open('https://www.youtube.com/watch?v=zOeSSP9GJcs', '_blank');
+  });
+</script>
