@@ -13,8 +13,8 @@ import { ThemeToggle } from "@/components/theme";
 
 const navItems = [
   { href: "/ESP/", label: "Accueil" },
-  { href: "/ESP/About", label: "Equipe" },
-  { href: "/ESP/Services", label: "Services" },
+  { href: "/ESP/#team", label: "Equipe" },
+  { href: "/ESP/#solutions", label: "Services" },
   { href: "/ESP/Contact", label: "Contact" },
   { href: "/#FAQ", label: "FAQ" },
 ];
