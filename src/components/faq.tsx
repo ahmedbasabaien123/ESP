@@ -4,7 +4,31 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+---
+import Button from "./button.astro";
+const link = "https://youtu.be/zOeSSP9GJcs";
+const text = "Regarder une vidéo";
 
+---
+
+<section
+  class="mt-40 flex h-[500px] gap-4 bg-[url('/CTAbg.jpg')] bg-cover text-center text-white"
+>
+  <div
+    class="flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-30"
+  >
+    <h1
+      class="mx-20 pb-10 text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-6xl"
+    >
+      {largeText}
+    </h1>
+    <h2
+      class="mx-10 mb-20 pb-10 text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-2xl"
+    >
+    </h2>
+    <Button link={link} text={text} name={name} />
+  </div>
+</section>
 export default function Faq() {
   return (
     <div
@@ -39,6 +63,8 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
+          <Button link={link} text={text} name={name} />
+
     </div>
   );
 }
