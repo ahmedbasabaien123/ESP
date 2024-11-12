@@ -2,7 +2,6 @@
 const link = "/Contact";
 import Image from "astro/components/Image.astro";
 
-// adjust these variable to change your content
 const mainText = "Security Information and Event Management";
 const secondaryText = "Surveillez, détectez, réagissez, protégez !";
 ---
@@ -14,16 +13,14 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
 <section class="relative z-[-10] h-[70vh] w-full">
   <Image
     data-testid="hero-img"
-    src="/ESP/heroimg.webp"
+    src="/heroimg.webp"
     alt="hero"
     loading="eager"
     class="absolute inset-0 h-full w-full object-cover"
     width={1920}
     height={1080}
   />
-  <div
-    class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100"
-  >
+  <div class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100">
     <h1
       data-testid="hero-text"
       transition:name="heroTxt"
@@ -38,16 +35,13 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
     >
       {secondaryText}
     </h2>
-  <button
-  class="flex items-center gap-2 rounded-lg bg-red-600 px-6 py-3 text-white hover:bg-red-700 transition-colors"
-  onclick="window.open('https://www.youtube.com/watch?v=3vGSGP9GZc4', '_blank')"
->
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-  Regarder la vidéo
-</button>
-
+    <a
+      href="https://www.youtube.com/watch?v=3vGSGP9GZc4"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 rounded-lg bg-red-600 px-6 py-3 text-white hover:bg-red-700 transition-colors"
+    >
+      Regarder la vidéo
+    </a>
   </div>
 </section>
