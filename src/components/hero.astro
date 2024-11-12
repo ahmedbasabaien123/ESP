@@ -5,7 +5,6 @@ import Image from "astro/components/Image.astro";
 // adjust these variable to change your content
 const mainText = "Security Information and Event Management";
 const secondaryText = "Surveillez, détectez, réagissez, protégez !";
-const videoUrl = "https://www.youtube.com/watch?v=zOeSSP9GJcs";
 ---
 
 <head>
@@ -40,18 +39,8 @@ const videoUrl = "https://www.youtube.com/watch?v=zOeSSP9GJcs";
       {secondaryText}
     </h2>
     
-    <button 
-      onclick={`window.location.href='${videoUrl}'`}
-      class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-    >
+    <button onclick="location.href='https://www.youtube.com/watch?v=zOeSSP9GJcs'" class="bg-red-600 text-white px-4 py-2 rounded">
       Regarder la vidéo
     </button>
   </div>
 </section>
-
-<script>
-  // Ajout d'un gestionnaire d'événements côté client
-  document.querySelector('button').addEventListener('click', function() {
-    window.open('https://www.youtube.com/watch?v=zOeSSP9GJcs', '_blank');
-  });
-</script>
