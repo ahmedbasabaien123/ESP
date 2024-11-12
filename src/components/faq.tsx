@@ -14,28 +14,23 @@ export default function Faq() {
       <h1 className="mb-10 text-4xl">FAQ</h1>
       <Accordion type="single" collapsible className="w-full text-left">
         <AccordionItem value="item-1">
-          <AccordionTrigger>Can you do this particular job?</AccordionTrigger>
+          <AccordionTrigger>Pourquoi nous rejoindre ?</AccordionTrigger>
           <AccordionContent className="text-lg">
-            Yes. We do that particular job multiple times a week, sometimes
-            multiple times a day.
+            En travaillant sur un SIEM, tu contribueras à renforcer la sécurité de vraies infrastructures, tout en apprenant à réagir aux incidents de sécurité complexes. Rejoins-nous pour développer une expertise en cybersécurité, une compétence ultra-prisée sur le marché du travail !
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>
-            I have been burned in the past, will that happen here?
+            Je ne fais pas de cyber sécurité, puis je quand même rejoindre le projet ?
           </AccordionTrigger>
           <AccordionContent className="text-lg">
-            Absoluetely not, we have a proven track record of successful jobs
-            and satisfied clients. Don't believe us? Check out our customer
-            reviews.
+            Oui, absolument ! Même si tu ne te spécialises pas en cybersécurité, tu peux tout à fait rejoindre le projet. Nous avons besoin de personnes avec différentes compétences et perspectives, et tu pourras contribuer à des aspects comme la gestion des données, l’analyse, la programmation, et bien plus.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>When will you be available next?</AccordionTrigger>
+          <AccordionTrigger>Si on ne peut pas faire de BeerStorming, quel est l'intéret ? </AccordionTrigger>
           <AccordionContent className="text-lg">
-            Our availablility is constantly changing, if you are interested in
-            working together please conact us through our comapany email or
-            phone, both can be found in our contact page.
+            Don't panic, nous organiserons un BeerStorming dans les règles de l'art par visioconférence tu connais !
           </AccordionContent>
         </AccordionItem>
       </Accordion>
