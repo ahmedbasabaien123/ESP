@@ -14,7 +14,7 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
 <section class="relative z-[-10] h-[70vh] w-full">
   <Image
     data-testid="hero-img"
-    src="/heroimg.webp"
+    src="/ESP/heroimg.webp"
     alt="hero"
     loading="eager"
     class="absolute inset-0 h-full w-full object-cover"
@@ -39,8 +39,21 @@ const secondaryText = "Surveillez, détectez, réagissez, protégez !";
       {secondaryText}
     </h2>
     
-  <a href="https://www.youtube.com/watch?v=zOeSSP9GJcs" class="bg-red-600 text-white px-4 py-2 rounded no-underline">
-  Regarder la vidéo
-</a>
+    <button 
+      onclick="window.open('https://www.youtube.com/watch?v=zOeSSP9GJcs', '_blank')"
+      type="button"
+      class="bg-red-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-red-700"
+    >
+      Regarder la vidéo
+    </button>
   </div>
 </section>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoButton = document.querySelector('button');
+    videoButton.addEventListener('click', function() {
+      window.open('https://www.youtube.com/watch?v=zOeSSP9GJcs', '_blank');
+    });
+  });
+</script>
