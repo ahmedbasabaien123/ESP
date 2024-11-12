@@ -4,10 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
----
-import Button from "./button.astro";
-const link = "https://youtu.be/zOeSSP9GJcs";
-const text = "Regarder une vidéo";
 
 ---
 
@@ -63,7 +59,6 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-          <Button link={link} text={text} name={name} />
 
     </div>
   );
